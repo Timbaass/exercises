@@ -1,0 +1,11 @@
+services:
+  db:
+    image: postgres
+    container_name: jwt-exercise
+    ports:
+      - "5446:5432"
+    restart: always
+    environment:
+      POSTGRES_PASSWORD: changemeinprod!
+      POSTGRES_USER: jwt_user
+      POSTGRES_DB: jwt_db
